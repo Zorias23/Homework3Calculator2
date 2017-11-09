@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:background="@color/colorAccent"
+    tools:context="com.example.admin.homework3__calculator.MainActivity">
+
+    <TextView
+        android:id="@+id/displayMath"
+        android:layout_width="582dp"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:text="0"
+        android:textStyle="bold"
+        tools:textSize="40sp" />
+
+    <GridLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="7"
+
+
+        android:rowCount="5">
+
+        <Button
+            android:id="@+id/buttonSpace2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" "
+            tools:textSize="18sp" />
+
+        <Button
+            android:id="@+id/buttonSpace3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" "
+            tools:textSize="18sp" />
+
+        <Button
+            android:id="@+id/buttonSqrt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="sqrt"
+            tools:textSize="18sp" />
+
+        <Button
+            android:id="@+id/buttonCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="displayCharacter"
+            android:text="C"
+            android:textStyle="bold"
+            tools:textColor="@android:color/holo_red_light"
+            tools:textSize="18sp" />
+
+        <Button
+            android:id="@+id/buttonSpace"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" "
+            tools:textSize="18sp" />
+
+        <Button
+            android:id="@+id/buttonPercent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="displayCharacter"
+            android:text="%"
+            tools:textSize="18sp" />
+
+        <Button
+            android:id="@+id/buttonDivide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="displayCharacter"
+            android:text="/"
+            tools:textSize="18sp" />
+
+        <Button
+            android:id="@+id/buttonSin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="sin"
+            tools:textSize="18sp" />
+
+        <Button
+            android:id="@+id/buttonCos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="cos"
+            tools:textSize="18sp" />
+
+        <Button
+            android:id="@+id/buttonTan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="tan"
+            tools:textSize="18sp" />
+
+        <Button
+            android:id="@+id/button7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="displayCharacter"
+            android:text="7"
+            tools:textSize="18sp" />
+
+        <Button
+            android:id="@+id/button8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="displayCharacter"
+            android:text="8"
+            tools:textSize="18sp" />
+
+        <Button
+            android:id="@+id/button9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="displayCharacter"
+            android:text="9"
+            tools:textSize="18sp" />
+
+        <Button
+            android:id="@+id/buttonMultiply"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="displayCharacter"
+            android:text="X"
+            tools:textSize="18sp" />
+
+        <Button
+            android:id="@+id/buttonLn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ln"
+            tools:textSize="18sp" />
+
+        <Button
+            android:id="@+id/buttonLog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="log"
+            tools:textSize="18sp" />
+
+        <Button
+            android:id="@+id/button1overx"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1/x"
+            tools:textSize="18sp" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="displayCharacter"
+            android:text="4"
+            tools:textSize="18sp" />
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="displayCharacter"
+            android:text="5"
+            tools:textSize="18sp" />
+
+        <Button
+            android:id="@+id/button6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="displayCharacter"
+            android:text="6"
+            tools:textSize="18sp" />
+
+        <Button
+            android:id="@+id/buttonMinus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="displayCharacter"
+            android:text="-"
+            tools:textSize="18sp" />
+
+        <Button
+            android:id="@+id/buttonEtox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="e^x"
+            tools:textSize="18sp" />
+
+        <Button
+            android:id="@+id/buttonXsquared"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="x^2"
+            tools:textSize="18sp" />
+
+        <Button
+            android:id="@+id/buttonXtoy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="x^y"
+            tools:textSize="18sp" />
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="displayCharacter"
+            android:text="1"
+            tools:textSize="18sp" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="displayCharacter"
+            android:text="2"
+            tools:textSize="18sp" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="displayCharacter"
+            android:text="3"
+            tools:textSize="18sp" />
+
+        <Button
+            android:id="@+id/buttonAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="displayCharacter"
+            android:text="+"
+            tools:textSize="18sp" />
+
+        <Button
+            android:id="@+id/buttonAbs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="abs"
+            tools:textSize="18sp" />
+
+        <Button
+            android:id="@+id/buttonPi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="pi"
+            tools:textSize="18sp" />
+
+        <Button
+            android:id="@+id/buttonE"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="e"
+            tools:textSize="18sp" />
+
+        <Button
+            android:id="@+id/buttonDecimal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="displayCharacter"
+            android:text="."
+            tools:textSize="18sp" />
+
+        <Button
+            android:id="@+id/button0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="displayCharacter"
+            android:text="0"
+            tools:textSize="18sp" />
+
+        <Button
+            android:id="@+id/buttonNegation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="displayCharacter"
+            android:text="+/-"
+            tools:textSize="18sp" />
+
+        <Button
+            android:id="@+id/buttonEquals"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="displayCharacter"
+            android:text="="
+            android:textStyle="bold"
+            tools:background="@android:color/holo_green_light"
+            tools:textSize="18sp" />
+    </GridLayout>
+
+
+</LinearLayout>
