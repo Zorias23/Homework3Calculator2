@@ -315,16 +315,18 @@ public class MainActivity extends AppCompatActivity {
                 {
                     performMath(number1, number2, operator);
                 }
-                Log.d(TAG, "displayCharacter: unaryLength:" + unary.length() + " number1: " + number1);
+
                 if (unary.length()> 0 && number1.length()> 0)
                 {
                     number1 = performUnary(number1, unary);
+                    unary = "";
                     displayMath.setText(number1);
                 }
 
                 break;
+
             case R.id.buttonSqrt:
-                Log.d(TAG, "displayCharacter: setting sqrt");
+
                 unary = "sqrt";
 
                 break;
@@ -378,7 +380,7 @@ public class MainActivity extends AppCompatActivity {
     }
     public String performUnary(String number1, String unary)
     {
-        Log.d(TAG, "performUnary: executed");
+        
         String result = "";
         double num1 = Double.valueOf(number1);
         switch (unary) {
